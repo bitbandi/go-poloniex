@@ -1,7 +1,7 @@
 package poloniex
 
 type Balance struct {
-	Available string `json:"available"`
-	BtcValue  string `json:"btcValue"`
-	OnOrders  string `json:"onOrders"`
+	Available float64 `json:"available,string"`
+	BtcValue  float64 `json:"btcValue,string"`
+	OnOrders  float64 `json:"onOrders,string"`
 }
